@@ -1,0 +1,65 @@
+/* MobileMenu.css */
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 15px;
+  }
+  
+  .mobile-menu {
+    display: none; /* Başlangıçta mobil menüyü gizle */
+  }
+  
+  @media (max-width: 768px) {
+    .mobile-menu {
+      display: block; /* Ekran genişliği 768 piksel veya daha küçükse göster */
+    }
+    .mysecim{
+      width: 200px;
+    }
+}
+
+  .menu-icon {
+    cursor: pointer;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+  }
+  
+  .bar {
+    width: 100%;
+    height: 4px;
+    background-color:white;
+    transition: 0.3s;
+  }
+  
+  .bar.open {
+    background-color: #fff; /* Menü açıkken bar rengini değiştirin */
+  }
+  
+  .menu-items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 90px; /* Menüyü istediğiniz konuma yerleştirin */
+    right: 0px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-items a {
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  /* Ekstra stillendirme ihtiyaçlarınızı buraya ekleyebilirsiniz */
+  
+  
